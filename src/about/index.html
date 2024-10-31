@@ -1,45 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../output.css">
-</head>
-<body>
-    <nav class="bg-pink-400 shadow-lg p-3 sm:flex gap-5 text-xl justify-between">
-          <img  class="w-12 h-12" src="../about/a2.png" alt="">
-           <ul class="text-grey-400 sm:self-center text-xl border-t sm:border-none">
-              <li class="sm:inline-block">
-                 <a href="#" class="p-3 text-white">About</a>
-              </li>
-              <li class="sm:inline-block">
-                 <a href="#" class="p-3 text-white">Home</a>
-              </li>
-              <li class="sm:inline-block">
-                <a href="#" class="p-3 text-white">Contact</a>
-             </li>
-              <li class="sm:inline-block">
-                 <a href="#" class="p-3 text-white">Product</a>
-              </li>
-  
-           </ul>
-     </nav>
-    <div class="container mx-auto p-10">
-        <section class="about mx-auto py-5">
-               <h4 class="text-5xl font-bold mb-5 text-center">ABOUT</h4>
-             <div class="flex space-x-10 items-center ">
-                <img src="../about/a1.jpg" />
-                <div>
-                   <p>
-                    Akhir-akhir ini, media sosial sedang dihebohkan dengan kehadiran boneka viral bernama Labubu. Labubu merupakan peri 
-                    berbulu dengan ciri khas telinga runcing, senyum 'nakal' dan gigi runcing.
-                    Sebenarnya karakter ini sudah diperkenalkan sejak 2015, tapi setahun belakangan jadi populer. Viral gantungan boneka Labubu salah satunya berkat unggahan organik Lisa 'Blackpink' di akun Instagramnya. Labubu pun dicari publik Thailand sampai masyarakat internasional, termasuk di Indonesia. Harga boneka Labubu tidak murah, yakni mulai dari
-                     Rp1 juta hingga Rp5 juta untuk edisi kolab terbatas.
-                   </p>
+    <header w3-include-html="/src/components/header.html"></header>
+    <body>
+        <nav class="flex bg-pink-400 shadow-lg p-3 sm:flex gap-5 text-xl justify-between">
+            <img class="w-12 h-12" src="../assets/pic/logo2.jpg" alt="" />
+            <ul class="hidden md:flex text-grey-400 sm:self-center text-xl border-t sm:border-none">
+                <li class="sm:inline-block"><a href="/src/about/" class="p-3 text-white">About</a></li>
+                <li class="sm:inline-block"><a href="/src/home/" class="p-3 text-white">Home</a></li>
+                <li class="sm:inline-block"><a href="/src/contact/" class="p-3 text-white">Contact</a></li>
+                <li class="sm:inline-block"><a href="/src/product/" class="p-3 text-white">Product</a></li>
+            </ul>
+            <div id="menu-button" class="bg-pink-500 h-10 w-10 rounded-md md:hidden"></div>
+        </nav>
+        <div id="menu-mobile" class="h-36 w-full bg-pink-500 hidden">
+            <ul class="grid text-grey-400 text-md text-center">
+                <li class="py-1 sm:inline-block"><a href="/src/home/" class="p-3 text-white">Home</a></li>
+                <li class="py-1 sm:inline-block"><a href="/src/about/" class="p-3 text-white">About</a></li>
+                <li class="py-1 sm:inline-block"><a href="/src/contact/" class="p-3 text-white">Contact</a></li>
+                <li class="py-1 sm:inline-block"><a href="/src/product/" class="p-3 text-white">Product</a></li>
+            </ul>
+        </div>
+
+        <div class="container mx-auto p-10">
+            <section class="about mx-auto py-5">
+                <h4 class="text-5xl font-bold mb-5 text-center">ABOUT</h4>
+                <div class="flex space-x-10 items-center">
+                    <img src="../assets/pic/a1.jpg" />
+                    <div>
+                        <p>
+                            Akhir-akhir ini, media sosial sedang dihebohkan dengan kehadiran boneka viral bernama Labubu. Labubu merupakan peri berbulu dengan ciri khas telinga runcing, senyum 'nakal' dan gigi runcing. Sebenarnya karakter
+                            ini sudah diperkenalkan sejak 2015, tapi setahun belakangan jadi populer. Viral gantungan boneka Labubu salah satunya berkat unggahan organik Lisa 'Blackpink' di akun Instagramnya. Labubu pun dicari publik
+                            Thailand sampai masyarakat internasional, termasuk di Indonesia. Harga boneka Labubu tidak murah, yakni mulai dari Rp1 juta hingga Rp5 juta untuk edisi kolab terbatas.
+                        </p>
+                    </div>
                 </div>
-             </div>
-        </section>
-    </div>
-</body>
+            </section>
+        </div>
+        <script src="/src/assets/main.js"></script>
+    </body>
 </html>
