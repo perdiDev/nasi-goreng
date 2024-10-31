@@ -1,114 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="../output.css" />
-  </head>
-  <body>
-    <nav class="flex justify-between items-center h-12 shadow-md bg-pink-400 px-5">
-      <p>TEST</p>
-      <ul class="flex gap-3">
-        <li><a href="">Home</a></li>
-        <li><a href="">About</a></li>
-        <li><a href="">Product</a></li>
-        <li><a href="">Contact</a></li>
-      </ul>
-    </nav>
-    <section id="product" class="m-5">
-      <div class="grid grid-cols-3 gap-5">
-        <div class="product-card p-5 bg-pink-50 rounded-lg">
-          <div class="product-pic">
-            <img src="pic/have-a-seat-v2-purple.png" alt="" />
-          </div>
-          <div class="product-content p-2">
-            <div class="grid">
-              <h2 class="text-xl font-bold">Labubu Have A Seat V2 Purple</h2>
-              <div class="harga flex items-center gap-1">
-                <small class="text-gray-500">Rp <span class="line-through">1.000.000</span></small>
-                <span>-</span>
-                <span class="text-red-600">10%</span>
-              </div>
-              <p class="text-lg">Rp. 900.000</p>
-              <div class="flex justify-between gap-2 items-center">
-                <div class="rating flex items-center gap-1">
-                  <div class="stars flex gap-0.5">
-                    <img src="pic/star.png" class="h-5 w-5" alt="" />
-                    <img src="pic/star.png" class="h-5 w-5" alt="" />
-                    <img src="pic/star.png" class="h-5 w-5" alt="" />
-                    <img src="pic/star.png" class="h-5 w-5" alt="" />
-                    <img src="pic/star.png" class="h-5 w-5" alt="" />
-                  </div>
-                  <span>-</span>
-                  <span>5.0</span>
-                </div>
-                <button type="button" class="bg-yellow-300 text-center py-2 px-4 rounded-md">Buy Now</button>
-              </div>
-            </div>
-          </div>
+    <header w3-include-html="/src/components/header.html"></header>
+    <body>
+        <nav class="flex bg-pink-400 shadow-lg p-3 sm:flex gap-5 text-xl justify-between">
+            <img class="w-12 h-12" src="../assets/pic/logo2.jpg" alt="" />
+            <ul class="hidden md:flex text-grey-400 sm:self-center text-xl border-t sm:border-none">
+                <li class="sm:inline-block"><a href="/src/about/" class="p-3 text-white">About</a></li>
+                <li class="sm:inline-block"><a href="/src/home/" class="p-3 text-white">Home</a></li>
+                <li class="sm:inline-block"><a href="/src/contact/" class="p-3 text-white">Contact</a></li>
+                <li class="sm:inline-block"><a href="/src/product/" class="p-3 text-white">Product</a></li>
+            </ul>
+            <div id="menu-button" class="bg-pink-500 h-10 w-10 rounded-md md:hidden"></div>
+        </nav>
+        <div id="menu-mobile" class="h-36 w-full bg-pink-500 hidden">
+            <ul class="grid text-grey-400 text-md text-center">
+                <li class="py-1 sm:inline-block"><a href="/src/home/" class="p-3 text-white">Home</a></li>
+                <li class="py-1 sm:inline-block"><a href="/src/about/" class="p-3 text-white">About</a></li>
+                <li class="py-1 sm:inline-block"><a href="/src/contact/" class="p-3 text-white">Contact</a></li>
+                <li class="py-1 sm:inline-block"><a href="/src/product/" class="p-3 text-white">Product</a></li>
+            </ul>
         </div>
-        <div class="product-card p-5 bg-pink-50 rounded-lg">
-          <div class="product-pic">
-            <img src="pic/monsters-exciting-macaron-soymilk.png" alt="" />
-          </div>
-          <div class="product-content p-2">
-            <div class="grid">
-              <h2 class="text-xl font-bold">Labubu Monsters Exciting Macaron Soymilk</h2>
-              <div class="harga flex items-center gap-1">
-                <small class="text-gray-500">Rp <span class="line-through">1.000.000</span></small>
-                <span>-</span>
-                <span class="text-red-600">10%</span>
-              </div>
-              <p class="text-lg">Rp. 900.000</p>
-              <div class="flex justify-between gap-2 items-center">
-                <div class="rating flex items-center gap-1">
-                  <div class="stars flex gap-0.5">
-                    <img src="pic/star.png" class="h-5 w-5" alt="" />
-                    <img src="pic/star.png" class="h-5 w-5" alt="" />
-                    <img src="pic/star.png" class="h-5 w-5" alt="" />
-                    <img src="pic/star.png" class="h-5 w-5" alt="" />
-                    <img src="pic/star.png" class="h-5 w-5" alt="" />
-                  </div>
-                  <span>-</span>
-                  <span>5.0</span>
+
+        <section id="product" class="m-5">
+            <div class="grid grid-cols-3 gap-5">
+                <div class="product-card p-5 bg-pink-50 rounded-lg">
+                    <div class="product-pic">
+                        <img src="../assets/pic/product/have-a-seat-v2-purple.png" alt="" />
+                    </div>
+                    <div class="product-content p-2">
+                        <div class="grid">
+                            <h2 class="text-xl font-bold">Labubu Have A Seat V2 Purple</h2>
+                            <div class="harga flex items-center gap-1">
+                                <small class="text-gray-500">Rp <span class="line-through">1.000.000</span></small>
+                                <span>-</span>
+                                <span class="text-red-600">10%</span>
+                            </div>
+                            <p class="text-lg">Rp. 900.000</p>
+                            <div class="flex justify-between gap-2 items-center">
+                                <div class="rating flex items-center gap-1">
+                                    <div class="stars flex gap-0.5">
+                                        <img src="../assets/pic/product/star.png" class="h-5 w-5" alt="" />
+                                        <img src="../assets/pic/product/star.png" class="h-5 w-5" alt="" />
+                                        <img src="../assets/pic/product/star.png" class="h-5 w-5" alt="" />
+                                        <img src="../assets/pic/product/star.png" class="h-5 w-5" alt="" />
+                                        <img src="../assets/pic/product/star.png" class="h-5 w-5" alt="" />
+                                    </div>
+                                    <span>-</span>
+                                    <span>5.0</span>
+                                </div>
+                                <button type="button" class="bg-yellow-300 text-center py-2 px-4 rounded-md">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <button type="button" class="bg-yellow-300 text-center py-2 px-4 rounded-md">Buy Now</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="product-card p-5 bg-pink-50 rounded-lg">
-          <div class="product-pic">
-            <img src="pic/monsters-mokoko-v1-close-to-sweet-vinyl-plush-doll-pendant.png" alt="" />
-          </div>
-          <div class="product-content p-2">
-            <div class="grid">
-              <h2 class="text-xl font-bold">Labubu Monsters Mokoko V1 Close To Sweet Vinyl Plush Doll Pendant</h2>
-              <div class="harga flex items-center gap-1">
-                <small class="text-gray-500">Rp <span class="line-through">1.000.000</span></small>
-                <span>-</span>
-                <span class="text-red-600">10%</span>
-              </div>
-              <p class="text-lg">Rp. 900.000</p>
-              <div class="flex justify-between gap-2 items-center">
-                <div class="rating flex items-center gap-1">
-                  <div class="stars flex gap-0.5">
-                    <img src="pic/star.png" class="h-5 w-5" alt="" />
-                    <img src="pic/star.png" class="h-5 w-5" alt="" />
-                    <img src="pic/star.png" class="h-5 w-5" alt="" />
-                    <img src="pic/star.png" class="h-5 w-5" alt="" />
-                    <img src="pic/star.png" class="h-5 w-5" alt="" />
-                  </div>
-                  <span>-</span>
-                  <span>5.0</span>
+                <div class="product-card p-5 bg-pink-50 rounded-lg">
+                    <div class="product-pic">
+                        <img src="../assets/pic/product/monsters-exciting-macaron-soymilk.png" alt="" />
+                    </div>
+                    <div class="product-content p-2">
+                        <div class="grid">
+                            <h2 class="text-xl font-bold">Labubu Monsters Exciting Macaron Soymilk</h2>
+                            <div class="harga flex items-center gap-1">
+                                <small class="text-gray-500">Rp <span class="line-through">1.000.000</span></small>
+                                <span>-</span>
+                                <span class="text-red-600">10%</span>
+                            </div>
+                            <p class="text-lg">Rp. 900.000</p>
+                            <div class="flex justify-between gap-2 items-center">
+                                <div class="rating flex items-center gap-1">
+                                    <div class="stars flex gap-0.5">
+                                        <img src="../assets/pic/product/star.png" class="h-5 w-5" alt="" />
+                                        <img src="../assets/pic/product/star.png" class="h-5 w-5" alt="" />
+                                        <img src="../assets/pic/product/star.png" class="h-5 w-5" alt="" />
+                                        <img src="../assets/pic/product/star.png" class="h-5 w-5" alt="" />
+                                        <img src="../assets/pic/product/star.png" class="h-5 w-5" alt="" />
+                                    </div>
+                                    <span>-</span>
+                                    <span>5.0</span>
+                                </div>
+                                <button type="button" class="bg-yellow-300 text-center py-2 px-4 rounded-md">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <button type="button" class="bg-yellow-300 text-center py-2 px-4 rounded-md">Buy Now</button>
-              </div>
+                <div class="product-card p-5 bg-pink-50 rounded-lg">
+                    <div class="product-pic">
+                        <img src="../assets/pic/product/monsters-mokoko-v1-close-to-sweet-vinyl-plush-doll-pendant.png" alt="" />
+                    </div>
+                    <div class="product-content p-2">
+                        <div class="grid">
+                            <h2 class="text-xl font-bold">Labubu Monsters Mokoko V1 Close To Sweet Vinyl Plush Doll Pendant</h2>
+                            <div class="harga flex items-center gap-1">
+                                <small class="text-gray-500">Rp <span class="line-through">1.000.000</span></small>
+                                <span>-</span>
+                                <span class="text-red-600">10%</span>
+                            </div>
+                            <p class="text-lg">Rp. 900.000</p>
+                            <div class="flex justify-between gap-2 items-center">
+                                <div class="rating flex items-center gap-1">
+                                    <div class="stars flex gap-0.5">
+                                        <img src="../assets/pic/product/star.png" class="h-5 w-5" alt="" />
+                                        <img src="../assets/pic/product/star.png" class="h-5 w-5" alt="" />
+                                        <img src="../assets/pic/product/star.png" class="h-5 w-5" alt="" />
+                                        <img src="../assets/pic/product/star.png" class="h-5 w-5" alt="" />
+                                        <img src="../assets/pic/product/star.png" class="h-5 w-5" alt="" />
+                                    </div>
+                                    <span>-</span>
+                                    <span>5.0</span>
+                                </div>
+                                <button type="button" class="bg-yellow-300 text-center py-2 px-4 rounded-md">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </body>
+        </section>
+        <script src="/src/assets/main.js"></script>
+    </body>
 </html>
